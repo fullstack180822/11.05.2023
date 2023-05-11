@@ -1,5 +1,8 @@
 package com.myh2.demo;
 
+import com.myh2.demo.model.Book;
+import com.myh2.demo.repository.BookRepository;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -18,4 +21,10 @@ public class DemoApplication {
 
 	}
 
+//	@Bean
+//	CommandLineRunner commandLineRunner(BookRepository repository) {
+//		return args -> {
+//			//repository.save(new Book(null, "Spring boot: Up and Running", 328, "Mark Heckler"));
+//		};
+//	}
 }
