@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/books")
 public class BookController {
 
+    // or:
+    //     @Autowired
+    //    private BookRepository bookRepository;
+
     private final BookRepository bookRepository;
 
     public BookController(BookRepository bookRepository) {
