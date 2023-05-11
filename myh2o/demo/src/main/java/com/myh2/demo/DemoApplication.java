@@ -19,12 +19,18 @@ public class DemoApplication {
 
 		System.out.println(dataSource);
 
+		// add column to book, i.e. price
+		// add it to Book record
+		// add it to schema.sql
+		// add it to data.sql
+		// add it to CommandLineRunner
+
 	}
 
-//	@Bean
-//	CommandLineRunner commandLineRunner(BookRepository repository) {
-//		return args -> {
-//			//repository.save(new Book(null, "Spring boot: Up and Running", 328, "Mark Heckler"));
-//		};
-//	}
+	@Bean
+	CommandLineRunner commandLineRunner(BookRepository repository) {
+		return args -> {
+			repository.save(new Book(null, "Spring boot in Action", 471, "Craig Walls"));
+		};
+	}
 }
